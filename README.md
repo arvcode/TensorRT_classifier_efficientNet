@@ -1,6 +1,6 @@
 # TensorRT based Real Time Object Classification using EfficientNet on Jetson Nano.
 
-This repository contains Jupyter notebooks that contain step by step instructions for converting a pre-trained CNN model to ONNX and to TensorRT engine and do real time inferencing on camera input.
+This repository contains Jupyter notebooks that contain step by step instructions for converting a pre-trained PyTorch CNN model to ONNX and to TensorRT engine and do real time inferencing on camera input.
 
 The purpose is for beginners to quickly understand the flow of converting and deploying a model using TensorRT on Nvidia Jetson Xavier series and for me to gain hands-on experience with TensorRT.
 
