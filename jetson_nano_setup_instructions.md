@@ -24,6 +24,10 @@ By default, TensorRT would be installed with the SD card image.
     pip install opencv-contrib-python  This will allow cv.imshow to popup the image window.
     
     pip install efficientnet_pytorch
+    
+    python3 -m pip install Pillow  or pip install Pillow
+    
+    If any packages are missed, please install via apt or pop.
 
 #### For faster deployment, I choose to use the SD card option.    
 
