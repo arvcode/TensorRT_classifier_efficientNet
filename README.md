@@ -1,8 +1,8 @@
 # TensorRT based Real Time Object Classification using EfficientNet on Jetson Nano.
 
-This repository contains Jupyter notebooks that contain step by step instructions for converting pre-trained CNN model to ONNX and to TensorRT engine and do real time inferencing on camera input.
+This repository contains Jupyter notebooks that contain step by step instructions for converting a pre-trained CNN model to ONNX and to TensorRT engine and do real time inferencing on camera input.
 
-The purpose is for beginners to easily understand the flow of converting and deploying a model using TensorRT on Nvidia Jetson Xavier series and for me to understand and gain hands-on experience with TensorRT.
+The purpose is for beginners to quickly understand the flow of converting and deploying a model using TensorRT on Nvidia Jetson Xavier series and for me to gain hands-on experience with TensorRT.
 
 The Jupyter notebooks are split into self-contained notebooks, each focussing on a specific task. 
 The notebooks do the following,
@@ -35,8 +35,7 @@ print("Camera started...")
 
 
  
-
-For setting up the environment, please refer to the [jetson_nano_setup_instructions.md](https://github.com/arvcode/TensorRT_classifier_efficientNet/blob/main/jetson_nano_setup_instructions.md) in this repository.
+For setting up the environment to run Jupyter notebooks, please refer to the [jetson_nano_setup_instructions.md](https://github.com/arvcode/TensorRT_classifier_efficientNet/blob/main/jetson_nano_setup_instructions.md) in this repository.
 
 Please also see the [References.md](https://github.com/arvcode/TensorRT_classifier_efficientNet/blob/main/References.md) file for the list of references.
 
