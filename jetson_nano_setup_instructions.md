@@ -15,6 +15,8 @@ By default, TensorRT would be installed with the SD card image.
 
 > There is another option to manually flash Jetson Nano through shell scripts. Please find the individual BSP components at 
 >   https://developer.nvidia.com/embedded/linux-tegra
+>   FYI, It is possible to download and setup the Jetson system via shell scripts. As part of my job, I have setup the BSP and CUDA,CuDNN,TensorRT frameworks via scripts.
+>   However, this option is only if Jetpack cannot be accessed or if we need to customize the filesystem and BSP.
 
 
 2. Please also install 
