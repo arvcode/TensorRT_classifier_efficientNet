@@ -1,13 +1,9 @@
 # Object Classification with TensorRT using a pretrained EfficientNetB2 CNN on ImageNet.
-# EffiecientNet Reference --> https://github.com/lukemelas/EfficientNet-PyTorch.
 # Please see References.md in this repository.
-# This script will take in images from camera and predict the class of object.
-
+# This script will take images from camera and predict the class of object.
+# Please refer to the LICENSE file in this repository.
 
 # coding: utf-8
-
-# In[2]:
-
 
 #Import Packages
 import cv2 as cv
@@ -18,10 +14,6 @@ import json
 from PIL import Image
 from torchvision import transforms
 
-
-# In[3]:
-
-
 #Set constants
 BATCH_SIZE=1
 N_CLASSES=1000
@@ -29,25 +21,18 @@ PRECISION=np.float32
 image_size=224
 TRT_PATH='models/efficientnetb2_batch1.trt'
 
-
-# In[4]:
-
-
+#Load TensorRT Engine
 print("Loading TRT Engine")
-
 trt_model=ONNXClassifierWrapper(TRT_PATH,[BATCH_SIZE,N_CLASSES],target_dtype=PRECISION)
 print("Loaded TRT Engine!!")
 
-# In[5]:
-
+#Load Labels
 print("Loading classification labels")
 labels_map=json.load(open('labels_map.txt'))
 labels_map=[labels_map[str(i)] for i in range(1000)]
 
 
-# In[6]:
-
-
+# Function for Inferencing
 def infer_objects(image):
     img=cv.cvtColor(image,cv.COLOR_BGR2RGB)
     img=Image.fromarray(img)
@@ -80,18 +65,14 @@ def infer_objects(image):
     return prob,label
     
 
-
-# In[1]:
-
-
-# In[12]:
-
-
+#Starting the camera. Please modify the cv.VideoCapture(x)
+# x is the camera number.
 
 print("Start Classifying...")
-capture=cv.VideoCapture(1)
+capture=cv.VideoCapture(1) #USB camera number 1.
 print("Camera started...")
 
+#Loops until Enter Key is pressed on the keyboard
 while (True):
     ret, img=capture.read()
     prob,label=infer_objects(img)
