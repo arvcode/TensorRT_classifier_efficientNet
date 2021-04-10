@@ -1,4 +1,29 @@
-### Instructions.
+## Instructions for setup:
+
+### Packages:
+
+1. To setup Jetson Nano, we can use Jetpack or download the SD card image from 
+
+    https://developer.nvidia.com/embedded/downloads
+
+
+> Please also follow the link
+> https://docs.nvidia.com/deeplearning/tensorrt/quick-start-guide/index.html for any issues with TensorRT setup.
+    
+
+By default, TensorRT would be installed with the SD card image.
+
+> There is another option to manually flash Jetson Nano through shell scripts. Please find the individual BSP components at 
+>   https://developer.nvidia.com/embedded/linux-tegra
+
+
+2. Please also install 
+
+    pip install opencv-contrib-python  This will allow cv.imshow to popup the image window.
+    
+    pip install efficientnet_pytorch
+
+#### For faster deployment, I choose to use the SD card option.    
 
 ### Jetson Nano 4GB setup:
 
