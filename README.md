@@ -32,6 +32,7 @@ capture=cv.VideoCapture(1) #USB camera number 1.  << Change to 0 if there is onl
 print("Camera started...")
 ```
 
+![TensorRT_based_RealTime_Classification_using_EfficientNet](https://user-images.githubusercontent.com/13186659/114273350-44f48680-9a4c-11eb-972b-7ea20a4ba01a.gif)
 
 
  
