@@ -25,9 +25,9 @@ By default, TensorRT would be installed with the SD card image.
     
     pip install efficientnet_pytorch
     
-    python3 -m pip install Pillow  or pip install Pillow
+    python3 -m pip install Pillow  / pip install Pillow
     
-    If any packages are missed, please install via apt or pop.
+    If any packages are missed, please install via apt or pip.
 
 #### For faster deployment, I choose to use the SD card option.    
 
